@@ -5,6 +5,10 @@
   /* box-sizing: border-box; */
 }
 
+.attribution {
+  background-color: hsl(229, 57%, 11%);
+  color: white;
+}
 .container {
   /* width: 1440px;*/
   background-color: hsl(229, 57%, 11%);
@@ -171,7 +175,7 @@
   position: relative;
   top: 5px;
   left: 15px;
-  font-size: 50%;
+  font-size: 10px;
 }
 
 #GbLeft {
