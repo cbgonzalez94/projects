@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  /* box-sizing: border-box; */
+}
+
+.container {
+  /* width: 1440px;*/
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 1920px 420px;
+  min-height: 900px;
+  min-width: 1025px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.wrapper {
+  position: relative;
+  top: 5vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+
+.fylo {
+  position: relative;
+  height: 102.5px;
+  width: 246px;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  border-top-right-radius: 100px;
+  min-height: 197px;
+  min-width: 360px;
+}
+
+.fylolettering {
+  background-image: url(./images/logo.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 20%;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.fyloicons {
+  /* position: absolute; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  top: 10%;
+  margin-left: 11%;
+
+  /* top: 60%;
+  left: 14%; */
+}
+
+.fylopapper {
+  margin-right: 18px;
+  background-color: hsl(229, 57%, 11%);
+  padding: 8px 12px;
+  border-radius: 15%;
+}
+.fylopapper:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px hsl(335, 100%, 65%);
+}
+.fylofolder {
+  display: flex;
+  margin-right: 5%;
+  background-color: hsl(229, 57%, 11%);
+  padding: 12px 10px;
+  border-radius: 15%;
+}
+
+.fylofolder:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px hsl(335, 100%, 65%);
+}
+
+.fyloupload {
+  background-color: hsl(229, 57%, 11%);
+  padding: 12px 10px;
+  border-radius: 15%;
+}
+.fyloupload:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px hsl(335, 100%, 65%);
+}
+
+.storage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  /* height: 82px;
+  width: 171.6px; */
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 15px;
+  min-height: 157.6px;
+  min-width: 576px;
+}
+
+.WrapperGb {
+  position: relative;
+  white-space: nowrap;
+}
+
+#storagebar {
+  /* position: relative; */
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+  background-color: #151e49;
+  width: 500px;
+  height: 15px;
+  border-radius: 13px;
+
+  padding: 3px;
+}
+
+/* investigar mejor funcionalidad AFTER */
+#storagebar::after {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  width: 75%;
+  height: 15px;
+  border-radius: 9px;
+  z-index: 1;
+  position: absolute;
+}
+.BallIndicator {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  height: 13px;
+  width: 13px;
+  z-index: 2;
+  left: 368px;
+  top: 4px;
+}
+.usagelimit {
+  position: absolute;
+  top: 50px;
+}
+
+.TextInsideGbLeft {
+  position: relative;
+  top: 10px;
+  left: 15px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.TextInsideLeft {
+  position: relative;
+  top: 5px;
+  left: 15px;
+  font-size: 50%;
+}
+
+#GbLeft {
+  display: flex;
+  position: absolute;
+  height: 60px;
+  width: 140px;
+  right: 30px;
+  bottom: 130px;
+  border-radius: 10px 10px 0px 10px;
+  background: white;
+}
+#GbLeft:before {
+  border: 25px solid white;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  bottom: -18px;
+  left: 90px;
+}
+/* position: absolute;
+  right: 30px;
+  bottom: 135px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px 10px 0 10px; */
+
+#GbRemaining {
+  font-weight: bolder;
+}
+
+#usageMaxLimit {
+  left: 450px;
+}
+.storageusedspace {
+  position: absolute;
+  top: 20%;
+  right: 55%;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .storage {
+    right: 15px;
+    margin-top: 15px;
+    min-width: 246px;
+    min-height: 130px;
+    width: 320px;
+    padding: 20px;
+  }
+
+  #GbLeft {
+    position: absolute;
+    top: 140px;
+    right: 110px;
+    border-radius: 10px;
+  }
+
+  #GbLeft:before {
+    border: none;
+  }
+
+  #storagebar {
+    width: 280px;
+  }
+
+  #usageMaxLimit {
+    left: 215px;
+  }
+
+  #usageMinLimit {
+    right: 200px;
+  }
+
+  .storageusedspace {
+    position: absolute;
+    width: max-content;
+    left: 50px;
+  }
+
+  .container {
+    background-image: url(./images/bg-mobile.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 0;
+  }
+  .BallIndicator {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    height: 13px;
+    width: 13px;
+    z-index: 2;
+    left: 203px;
+    top: 4px;
+  }
+}
