@@ -4,6 +4,17 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
+html,
+body {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+body {
+  font-size: 16px;
+
+  /* min-height: 100vh; */
+}
 
 .wrapper {
   display: flex;
@@ -14,36 +25,44 @@
 
 .background {
   background-color: whitesmoke;
-  height: 924px;
-  width: 375px;
-  position: relative;
+  height: 100vh;
+  width: 100%;
 }
+
+/* .BackgroundDesktop {
+  top: 45%;
+  left: 50%;
+  position: absolute;
+  height: fit-content;
+  height: 640px;
+  width: 450px;
+  border-radius: 300px 300px 0px 0px;
+  background-color: hsl(293, 100%, 63%);
+  opacity: 20%;
+} */
+
 .PhotoshopImg {
   position: relative;
   height: 573px;
   width: 179px;
   transform: translatey(-80px);
 }
-
 .paintbackground {
-  /* background-image: url(./images/backgroundshapemobile.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 179px;
-  height: 573px; */
+  height: 0px;
+  width: 0px;
 }
-
+/* MOBILE COMPONENTS  */
 .mobile {
   display: flex;
   justify-content: center;
   background-color: hsl(270, 20%, 96%);
   border: 20px solid white;
   border-width: 10px;
-  width: 250px;
+  width: 260px;
   height: 500px;
   position: absolute;
-  left: 17%;
-  bottom: 38%;
+  left: 25vw;
+  top: 12%;
   border-radius: 30px;
 }
 
@@ -58,6 +77,7 @@
   border-radius: 0px 0px 15px 15px;
 }
 
+/* SAMUEL GREEN CONTACT COMPONENTS  */
 .ProfileImg {
   height: 30px;
   width: 30px;
@@ -110,6 +130,14 @@
   color: white;
 }
 
+.fa-circle-thin {
+  position: absolute;
+  color: white;
+  top: 8px;
+  left: 10px;
+  opacity: 50%;
+}
+
 .SamuelName {
   font-weight: 600;
   font-size: 12px;
@@ -122,6 +150,9 @@
   color: whitesmoke;
   opacity: 40%;
 }
+/* SAMUEL GREEN CONTACT COMPONENT END  */
+
+/* CHATS  */
 
 .chats {
   position: absolute;
@@ -132,26 +163,138 @@
 }
 
 .chatleft1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 130px;
-  height: 40px;
-  background-color: hsl(206, 6%, 79%);
-  opacity: 35%;
+  height: 32px;
+  background-color: #ece4f1;
   border-radius: 15px 15px 15px 0px;
 }
+.textchat1 {
+  font-size: 9px;
+  color: hsl(276, 55%, 52%);
+  padding: 10px;
+}
+
+.textchat2 {
+  font-size: 9px;
+  color: black;
+  padding: 10px;
+}
+
 .chatleft2 {
-  top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
   position: absolute;
   width: 130px;
-  height: 40px;
-  background-color: hsl(206, 6%, 79%);
-  opacity: 35%;
+  height: 32px;
+  background-color: #ece4f1;
   border-radius: 15px 15px 15px 0px;
+}
+
+.chatleft3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 225px;
+  position: absolute;
+  width: 130px;
+  height: 45px;
+  background-color: #ece4f1;
+  border-radius: 15px 15px 15px 0px;
+}
+
+/* END CHATS  */
+
+/* MONEY COST SERVICES  */
+
+.minwalk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 280px;
+  position: absolute;
+  width: 155px;
+  height: 33px;
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border-radius: 12px 12px 12px 0px;
+}
+
+.MinWalkText {
+  font-size: 8px;
+  color: white;
+}
+
+.HourWalkText {
+  position: absolute;
+  right: 53px;
+  font-size: 8px;
+  color: white;
+}
+.DollarTwentynine {
+  position: relative;
+  font-size: 12px;
+  left: 20px;
+}
+.DollarFortynine {
+  position: relative;
+  font-size: 12px;
+  left: 36px;
+}
+
+.hourwalk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 320px;
+  position: absolute;
+  width: 155px;
+  height: 33px;
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+
+  border-radius: 12px 12px 12px 0px;
+}
+
+/* MONEY COST SERVICES END  */
+
+.chatright1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 145px;
+  left: 90px;
+  position: absolute;
+  width: 130px;
+  height: 35px;
+  background-color: white;
+  border-radius: 15px 15px 0px 15px;
+}
+
+.chatright2 {
+  top: 187px;
+  left: 120px;
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border-radius: 15px 15px 0px 15px;
 }
 
 .dogimages {
   position: absolute;
-  top: 115px;
+  top: 90px;
   left: 74px;
   display: flex;
   height: 50px;
@@ -160,20 +303,164 @@ img {
   border-radius: 10px;
   margin: 5px;
 }
-
-.textbooking {
+.typemessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   align-self: flex-end;
-  text-align: center;
-  bottom: 75px;
+  bottom: 10px;
+  width: 230px;
+  background-color: white;
+  border-radius: 15px;
 }
 
+.typetext {
+  width: 170px;
+  height: 35px;
+  border-radius: 15px;
+  border: none;
+}
+
+.rightarrow {
+  position: relative;
+  top: 1px;
+  left: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 100%;
+}
+.rightarrow:after {
+  content: "";
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* END OF MOBILE COMPONENTS  */
+
+/* PARAGRAPH SIMPLE BOOKING CODE  */
+.textbooking {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  background-color: ;
+}
 .Title {
+  font-weight: 500;
+  color: hsl(271, 36%, 24%);
   font-size: 45px;
-  margin-bottom: 25px;
 }
 
 .Text {
-  font-size: 20px;
   text-align: center;
+  color: hsl(270, 7%, 64%);
+  /* padding: 20px; WWWWTTTTFFFFF*/
+  line-height: 30px;
+}
+
+/* END PARAGRAPH CODE  */
+
+/* MEDIA QUERY  */
+
+@media screen and (min-width: 1136px) {
+  .textbooking {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 45%;
+    left: 45%;
+    width: 450px;
+    text-align: left;
+    top: 40%;
+  }
+  .Text {
+    text-align: left;
+    padding: 0px;
+  }
+  .Title {
+    padding-bottom: 20px;
+  }
+  .mobile {
+    top: 20%;
+    left: 20vw;
+  }
+  .SVG {
+    visibility: hidden;
+  }
+  .paintbackground {
+    height: 700px;
+    width: 350px;
+    border-radius: 0px 0px 300px 300px;
+    background: linear-gradient(
+      hsl(293, 100%, 63%),
+      hsl(264, 100%, 61%)
+    );
+    left: 1%;
+  }
+  .BackgroundDesktop {
+    left: 80%;
+    top: 200px;
+    opacity: 8%;
+    position: absolute;
+    height: 200vh;
+    width: 450px;
+    border-radius: 300px 300px 0px 0px;
+    background-color: hsl(293, 100%, 63%);
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1135px) {
+  .textbooking {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 45%;
+    left: 45%;
+    width: 450px;
+    text-align: left;
+    top: 40%;
+  }
+  .Text {
+    text-align: left;
+    padding: 0px;
+  }
+  .Title {
+    padding-bottom: 20px;
+  }
+  .BackgroundDesktop {
+    left: 80%;
+    top: 200px;
+    opacity: 8%;
+    position: absolute;
+    height: 100vh;
+    width: 450px;
+    border-radius: 300px 300px 0px 0px;
+    background-color: hsl(293, 100%, 63%);
+  }
+}
+@media screen and (max-height: 736px) {
+  .Title {
+    font-size: 20px;
+  }
+  .Text {
+    font-size: 15px;
+  }
+  .textbooking {
+    top: 95vh;
+    background-color: whitesmoke;
+  }
+  .mobile {
+    top: 5%;
+  }
 }
