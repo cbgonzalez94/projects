@@ -1,2 +1,2 @@
 var myString = 'I\'m a "fun" string';
-console.log(myString.indexOf("strin"));
+console.log(myString.indexOf("string"));
